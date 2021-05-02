@@ -1,0 +1,27 @@
+/* Currently production css
+Will eventually use minified css as production stylesheet
+
+1. light and dark themes
+2. main styling
+
+
+
+*/
+
+
+
+[theme="light"] {
+  --bg-color: #f2f4f8;
+  --font-color: #161b3c;
+}
+
+[theme="dark"] {
+  --bg-color: #101010;
+  --font-color: #ffffff;
+}
+
+
+body {
+  background-color: var(--bg-color);
+  color: var(--font-color);
+}

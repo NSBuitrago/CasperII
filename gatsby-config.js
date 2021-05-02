@@ -1,10 +1,17 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Nicolas Buitrago`,
+    description: `Ph.D. Student in Systems, Synthetic, and Physical Biology| Founder and Content Creator of Brain Power`,
+    author: `@nsbuitrago`,
   },
   plugins: [
+    {
+      resolve: `gatsby-source-ghost`,
+      options: {
+        apiUrl: process.env.API_URL,
+        contentApiKey: process.env.CONTENT_API_KEY,
+      },
+    },
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
     {
